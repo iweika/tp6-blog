@@ -3,6 +3,7 @@ declare (strict_types = 1);
 
 namespace app\admin\controller;
 
+use think\facade\Db;
 use think\Request;
 
 class AuthController
@@ -14,7 +15,10 @@ class AuthController
      */
     public function login()
     {
-        return  111;
+
+       $res = Db::name('admin')->find(1);
+
+       dump($res);
     }
 
     /**

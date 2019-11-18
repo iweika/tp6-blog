@@ -10,4 +10,4 @@
 // +----------------------------------------------------------------------
 use think\facade\Route;
 
-Route::post('auth/login','admin/auth/login');
+Route::any('login','auth/login');
